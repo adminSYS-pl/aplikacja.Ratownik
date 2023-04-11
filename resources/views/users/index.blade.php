@@ -30,6 +30,7 @@
                         @endforeach
                     </x-table>
                 </div>
+                {{ $users->links() }}
             </div>
         </div>
     </div>

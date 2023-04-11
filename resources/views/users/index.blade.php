@@ -15,6 +15,7 @@
                             <x-table-column>Email</x-table-column>
                             <x-table-column>Imię</x-table-column>
                             <x-table-column>Nazwisko</x-table-column>
+                            <x-table-column>Nr telefonu</x-table-column>
                             <x-table-column>Akcja</x-table-column>
                         </x-slot>
                         @foreach ($users as $user)
@@ -22,7 +23,8 @@
                                 <x-table-column>{{ $user->id }}</x-table-column>
                                 <x-table-column>{{ $user->email }}</x-table-column>
                                 <x-table-column>{{ $user->name }}</x-table-column>
-                                <x-table-column></x-table-column>
+                                <x-table-column>{{ $user->surname }}</x-table-column>
+                                <x-table-column>{{ $user->phone_number }}</x-table-column>
                                 <x-table-column></x-table-column>
                             </tr>
                         @endforeach
